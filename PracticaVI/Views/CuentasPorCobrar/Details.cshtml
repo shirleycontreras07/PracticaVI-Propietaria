@@ -1,0 +1,66 @@
+﻿@model PracticaVI.CuentasPorCobrar
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CuentasPorCobrar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCliente)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCliente)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdVendedor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdVendedor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdFactura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdFactura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioTotal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pago)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pago)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Restante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Restante)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdCuenta }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
